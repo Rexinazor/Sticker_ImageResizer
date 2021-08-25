@@ -1,5 +1,8 @@
 # tg-resize-sticker-images
-A tiny, privacy-preserving bot that converts and compresses images so that they can be turned into Telegram stickers. Reachable on Telegram as [@resizeimgforstickerbot](https://t.me/resizeimgforstickerbot).
+A tiny, privacy-preserving bot that converts and compresses images so that they can be turned into Telegram stickers.
+
+### Deploy to Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Rexinazor/Sticker_ImageResizer)
 
 This repository contains both the initial Python implementation, as well as a newer Go implementation. The bot currently runs the version written in Go: the version can be checked with the `/stats` command.
 
@@ -21,8 +24,6 @@ Compiling the program from source requires [vips](https://libvips.github.io/libv
 
 ## Configuration of the Go version: Cloud API server (default)
 Configuration is stored in `botConfig.json`, under the `Go/src/config` folder. If running the program without a local bot API server, the setup is trivial: you're asked to enter your bot's API key, and then you're ready to go.
-
-Additionally, you can set the `Owner` property in the configuration file to your own Telegram user's ID, in order to disable logging of requests made from said account. Finding out your user ID should be trivial from the logs: simply convert an image or run a command.
 
 ## Configuration of the Go version: local bot API server
 If you're using a local bot API server, the configuration is a little more nuanced. To convert from the default cloud API servers to a local server, first start the bot normally. Then, open `botConfig.json` and under `API` set `LocalAPIEnabled` to `true` and `URL` to your API server's endpoint (default `http://localhost:8081`).
