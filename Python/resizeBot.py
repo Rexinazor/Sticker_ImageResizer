@@ -36,7 +36,7 @@ def start(update, context):
 
 	To resize an image to a sticker-ready format, just send it to this chat!
 
-	[This bot is open-source.](https://github.com/499602D2/tg-resize-sticker-images)
+	[Managed By BioHazard Network.](https://t.me/TheHazardNetwork)
 	'''
 
 	# pull chat id, send message
@@ -68,7 +68,7 @@ def source(update, context):
 	Responds to /source command
 	'''
 	# construct message
-	reply_msg = '''🐙 [Source on Github.](https://github.com/499602D2/tg-resize-sticker-images)
+	reply_msg = '''🐙 [Source on Github.](https://github.com/Rexinazor/Sticker_ImageResizer)
 	'''
 
 	# pull chat id, send message
