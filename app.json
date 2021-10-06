@@ -5,14 +5,14 @@
     "keywords": ["Stickers ", "pyrogram", "telegram bot"],
     "env": {
         "TOKEN": {
-            "description": "Your Bot token from @Botfather"
+            "description": "2075953759:AAG2adywuSDGoZ3VbKhtfLMK7c7EhAuyDus"
         },
         "API_ID": {
-            "description": "Your API_ID from https://my.telegram.org/apps"
+            "description": "4782236"
            
         },
         "API_HASH": {
-            "description": "Your API_HASH from https://my.telegram.org/apps"
+            "description": "dfb0a7155ceb74188c0b17eed578bb4d"
         }
     },
     "buildpacks": [
